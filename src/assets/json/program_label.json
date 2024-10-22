@@ -1,0 +1,38 @@
+[
+	{
+		"language": "TH",
+		"label": [
+			{"name": "caption_title", "value": "Two Factor Authentication"},
+			{"name": "usernames_label", "value": "ชื่อผู้ใช้งาน"},
+			{"name": "emails_label", "value": "อีเมล"},
+			{"name": "fromdates_label", "value": "วันที่"},
+			{"name": "todates_label", "value": "ถึงวันที่"},
+			{"name": "username_surname_headerlabel", "value": "ชื่อผู้ใช้งาน"},
+			{"name": "createdatetime_headerlabel", "value": "วันที่สร้างรายการ"},
+			{"name": "confirmdatetime_headerlabel", "value": "วันที่ยืนยันรายกาาร"},
+			{"name": "factorflag_headerlabel", "value": "Factor"},
+			{"name": "modalheadertitle_show", "value": "แสดงรายการประวัติ"},
+			{"name": "email_headerlabel", "value": "อีเมล"},
+			{"name": "issuer_headerlabel", "value": "ผู้ให้บริการ"},
+			{"name": "userid_label", "value": "ชื่อผู้ใช้งาน"}
+		]
+	},
+	{
+		"language": "EN",
+		"label": [
+			{"name": "caption_title", "value": "Two Factor Authentication"},
+			{"name": "usernames_label", "value": "User Name"},
+			{"name": "emails_label", "value": "Email"},
+			{"name": "fromdates_label", "value": "From Date"},
+			{"name": "todates_label", "value": "To Date"},
+			{"name": "username_surname_headerlabel", "value": "User Name"},
+			{"name": "createdatetime_headerlabel", "value": "Create Date"},
+			{"name": "confirmdatetime_headerlabel", "value": "Confirm Date"},
+			{"name": "factorflag_headerlabel", "value": "Factor"},
+			{"name": "modalheadertitle_show", "value": "Show History"},
+			{"name": "email_headerlabel", "value": "Email"},
+			{"name": "issuer_headerlabel", "value": "Issuer"},
+			{"name": "userid_label", "value": "User Name"}
+		]
+	}
+]
