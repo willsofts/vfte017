@@ -1,7 +1,7 @@
 <template>
 <div id="searchpanel" class="panel-body search-panel">
     <div class="row row-height">
-        <div class="col-height col-md-3">
+        <div class="col-height col-md-2">
             <label for="usernames">{{ labels.usernames_label }}</label>
             <input type="text" v-model="localData.username" id="usernames" class="form-control input-md" maxlength="50" />
         </div>
@@ -9,21 +9,20 @@
             <label for="emails">{{ labels.emails_label }}</label>
             <input type="text" v-model="localData.email" id="emails" class="form-control input-md" maxlength="100" />
         </div>
-        <div class="col-height col-md-3">
+        <div class="col-height col-md-2">
             <label for="fromdates">{{ labels.fromdates_label }}</label>
             <InputDate v-model="localData.fromdate" id="fromdates" /> 
         </div>
-        <div class="col-height col-md-3">
+        <div class="col-height col-md-2">
             <label for="todates">{{ labels.todates_label }}</label>
             <InputDate v-model="localData.todate" id="todates" /> 
         </div>
-      </div>
-      <div class="row row-height">
-        <div class="col-height col-md-12 pull-right text-right">
-          <button @click="searchClick" class="btn btn-dark btn-sm btn-ctrl"><i class="fa fa-search fa-btn-icon" aria-hidden="true"></i>{{ labels.search_button }}</button>
-          <button @click="resetClick" class="btn btn-dark btn-sm btn-ctrl"><i class="fa fa-refresh fa-btn-icon" aria-hidden="true"></i>{{ labels.reset_button }}</button>
+        <div class="col-height col-md">
+          <br/>
+          <button id="searchbutton" @click="searchClick" class="btn btn-dark btn-sm btn-ctrl"><i class="fa fa-search fa-btn-icon" aria-hidden="true"></i>{{ labels.search_button }}</button>
+          <button id="resetbutton" @click="resetClick" class="btn btn-dark btn-sm btn-ctrl"><i class="fa fa-refresh fa-btn-icon" aria-hidden="true"></i>{{ labels.reset_button }}</button>
         </div>
-    </div>
+      </div>
     <div id="listpanel" class="table-responsive fa-list-panel">
         <DataTable ref="dataTable" :settings="tableSettings" :labels="labels" :dataset="dataset" @data-select="dataSelected" @data-sort="dataSorted" :formater="formatData" />
         <DataPaging ref="dataPaging" :settings="pagingSettings" @page-select="pageSelected" />
