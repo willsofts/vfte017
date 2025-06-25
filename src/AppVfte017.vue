@@ -16,7 +16,7 @@ import SearchForm from '@/components/SearchForm.vue';
 import EntryForm from '@/components/EntryForm.vue';
 import { getLabelModel, getMultiLanguagesModel, getMetaInfo } from "@willsofts/will-app";
 import { getDefaultLanguage, setDefaultLanguage } from "@willsofts/will-app";
-import { startApplication } from "@willsofts/will-app";
+import { startApplication, loadAndMergeLabel } from "@willsofts/will-app";
 
 const buildVersion = process.env.VUE_APP_BUILD_DATETIME;
 export default {
@@ -45,6 +45,11 @@ export default {
           this.multiLanguages = getMultiLanguagesModel();
           this.messagingHandler(data);
           this.$refs.pageHeader.changeLanguage(getDefaultLanguage());
+          loadAndMergeLabel("vfte017", (success) => {
+            if (success) {
+              this.changeLanguage(getDefaultLanguage());
+            }
+          });
         }
       });
     });
